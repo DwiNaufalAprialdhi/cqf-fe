@@ -1,0 +1,1003 @@
+/* Font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Font Baloo 2 */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+
+/* Font Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* AOS */
+@import "aos/dist/aos.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-poppins text-theme-dark;
+  }
+}
+
+@layer components {
+  .container_section {
+    @apply w-full h-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto;
+  }
+  .container_section_view {
+    @apply w-full h-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto px-5 lg:px-0;
+  }
+  .text_title {
+    @apply font-semibold lg:text-[48px] text-[24px] lg:leading-[60px] leading-normal;
+  }
+  .text_subtitle {
+    @apply font-normal lg:text-base text-sm lg:leading-[24px] leading-normal text-theme-secondary;
+  }
+  .menu_footer_link {
+    @apply font-normal text-base hover:text-theme-ascent duration-300;
+  }
+  .transition_menu {
+    @apply transition-all transform duration-300;
+  }
+  .reminder_label {
+    @apply font-medium lg:text-xs text-[10px];
+  }
+  .reminder_input {
+    @apply w-full h-max lg:py-[14px] py-[12px] px-4 bg-white rounded-[8px] appearance-none font-normal lg:text-xs text-[10px] leading-tight outline-none duration-100;
+  }
+  .reminder_submit {
+    @apply w-max h-max lg:py-[14px] py-[10px] lg:px-5 px-[12px] bg-theme-ascent rounded-full font-semibold lg:text-sm text-xs text-white hover:bg-theme-ascent/80 duration-200;
+  }
+  .reminder_reset {
+    @apply w-max h-max lg:py-[14px] py-[10px] lg:px-[50px] px-5 bg-transparent border border-theme-secondary rounded-full font-semibold lg:text-sm text-xs text-theme-secondary hover:bg-theme-ascent/10 duration-200;
+  }
+  .label_profile {
+    @apply font-medium lg:text-xs text-[10px] leading-tight;
+  }
+  .input_profile {
+    @apply w-full h-max lg:py-[14px] py-[12px] lg:px-4 px-3 bg-white rounded-[8px] font-normal lg:text-xs text-[10px] leading-tight outline-none;
+  }
+  .input_profile_password {
+    @apply w-full h-max lg:py-[14px] py-[12px] lg:pl-4 pl-3 lg:pr-12 pr-7 bg-white rounded-[8px] font-normal lg:text-xs text-[10px] leading-tight outline-none;
+  }
+  .profile_submit {
+    @apply w-max h-max lg:py-[14px] py-[10px] lg:px-[40px] px-5 bg-theme-ascent rounded-full hover:bg-theme-ascent/80 duration-200 font-semibold lg:text-sm text-xs text-white;
+  }
+  .profile_reset {
+    @apply w-max h-max lg:py-[14px] py-[10px] lg:px-[40px] px-5 bg-white rounded-full hover:bg-theme-ascent/5 duration-200 font-semibold lg:text-sm text-xs text-theme-secondary border border-theme-secondary;
+  }
+  .btn_ascent {
+    @apply w-full lg:p-[15px] p-[12px] rounded-full bg-theme-ascent hover:bg-theme-ascent/80 duration-200 flex items-center justify-center font-semibold lg:text-base text-xs leading-tight text-center text-slate-50;
+  }
+  .btn_ascent_outline {
+    @apply w-full lg:p-[15px] p-[12px] rounded-full bg-transparent hover:bg-theme-ascent/5 duration-200 flex items-center justify-center font-semibold lg:text-base text-xs leading-tight text-center text-theme-ascent border border-theme-ascent;
+  }
+  .navbar_link_menu {
+    @apply font_baloo font-normal text-base leading-tight text-slate-800;
+  }
+}
+
+.font_baloo {
+  font-family: "Baloo 2", sans-serif;
+}
+
+.font_nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Animation Keyframes ============================================== */
+
+@keyframes toBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toBottom {
+  animation: toBottom 0.3s ease-in-out forwards;
+}
+
+@keyframes toTop {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(20%);
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+.toTop {
+  animation: toTop 0.3s ease-in-out forwards;
+}
+
+@keyframes bounce01 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce01 {
+  animation: bounce01 8s ease-in-out infinite;
+}
+
+@keyframes bounce02 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce02 {
+  animation: bounce02 9s ease-in-out infinite;
+}
+
+@keyframes bounce03 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce03 {
+  animation: bounce03 10s ease-in-out infinite;
+}
+
+@keyframes bounce04 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce04 {
+  animation: bounce04 11s ease-in-out infinite;
+}
+
+@keyframes bounceOpt01 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceOpt01 {
+  animation: bounceOpt01 8s ease-in-out infinite;
+}
+
+@keyframes bounceOpt02 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceOpt02 {
+  animation: bounceOpt02 9s ease-in-out infinite;
+}
+
+@keyframes bounceOpt03 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceOpt03 {
+  animation: bounceOpt03 10s ease-in-out infinite;
+}
+
+@keyframes bounceOpt04 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceOpt04 {
+  animation: bounceOpt04 11s ease-in-out infinite;
+}
+
+/* Animation Keyframes ============================================== */
+
+.react-international-phone-input:focus {
+  @apply outline-none;
+}
+
+.react-international-phone-country-list {
+  @apply bg-white shadow-lg rounded-md border border-gray-300 mt-2 z-50 max-h-[300px] overflow-auto;
+}
+
+.react-international-phone-country {
+  @apply flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer;
+}
+
+.react-international-phone-country--selected {
+  @apply bg-slate-200 text-white font-medium;
+}
+
+.react-international-phone-country-flag {
+  @apply mr-2 w-6 h-4;
+}
+
+.react-international-phone-country-flag {
+  @apply w-5 h-4 rounded-sm object-contain;
+}
+
+/* Choice Swiper ============================================= */
+
+.choice-swiper .swiper-pagination-bullet {
+  width: 16px !important;
+  height: 4px !important;
+  margin: 0 4px !important; /* Margin antar pagination bullets */
+  border-radius: 20px !important;
+  background-color: #d0d0d0 !important; /* Warna pagination */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.choice-swiper .swiper-pagination-bullet-active {
+  width: 32px !important; /* Perbesar hanya pada lebar */
+  height: 4px !important;
+  background-color: #389ed9 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+@media (max-width: 1267px) {
+  .choice-swiper .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 4px !important;
+    margin: 0 4px !important; /* Margin antar pagination bullets */
+    border-radius: 20px !important;
+    background-color: #d0d0d0 !important; /* Warna pagination */
+    transition: all 0.3s ease-in-out !important;
+  }
+
+  .choice-swiper .swiper-pagination-bullet-active {
+    width: 28px !important; /* Perbesar hanya pada lebar */
+    height: 4px !important;
+    background-color: #389ed9 !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+}
+
+/* Choice Swiper ============================================= */
+
+/* Live Swiper =============================================== */
+
+.live-swiper .swiper-pagination {
+  position: absolute !important; /* Pastikan pagination absolut */
+  bottom: 54px !important; /* Atur jarak dari bawah */
+  left: 20px !important; /* Atur jarak dari kiri */
+  display: flex !important; /* Pastikan pagination tetap dalam baris */
+  align-items: center; /* Pusatkan secara vertikal */
+  justify-content: start; /* Posisikan ke kiri */
+}
+
+.live-swiper .swiper-pagination-bullet {
+  width: 16px !important;
+  height: 4px !important;
+  margin: 0 4px !important; /* Margin antar pagination bullets */
+  border-radius: 20px !important;
+  background-color: #ffffff !important; /* Warna pagination */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.live-swiper .swiper-pagination-bullet-active {
+  width: 32px !important; /* Perbesar hanya pada lebar */
+  height: 4px !important;
+  background-color: #ffffff !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Live Swiper =============================================== */
+
+/* Kajian Swiper =============================================== */
+
+.kajian-swiper .swiper-pagination {
+  position: absolute !important; /* Pastikan pagination absolut */
+  bottom: 13px !important; /* Atur jarak dari bawah */
+  left: 50% !important; /* Atur jarak dari kiri */
+  transform: translateX(-50%) !important; /* Pusatkan horizontal */
+  display: flex !important; /* Pastikan pagination tetap dalam baris */
+  align-items: center; /* Pusatkan secara vertikal */
+  justify-content: center; /* Posisikan ke tengah */
+}
+
+.kajian-swiper .swiper-pagination-bullet {
+  width: 16px !important;
+  height: 4px !important;
+  margin: 0 4px !important; /* Margin antar pagination bullets */
+  border-radius: 20px !important;
+  background-color: #ffffff !important; /* Warna pagination */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.kajian-swiper .swiper-pagination-bullet-active {
+  width: 32px !important; /* Perbesar hanya pada lebar */
+  height: 4px !important;
+  background-color: #ffffff !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Kajian Swiper =============================================== */
+
+/* Keyframe Slider ========================================= */
+
+@keyframes move1 {
+  0% {
+    transform: translateX(0);
+    scale: 1;
+    filter: grayscale(0);
+  }
+  20% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  30% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  50% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  60% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  80% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+  85% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+    filter: grayscale(0);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  20% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  30% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  50% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+  60% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+  80% {
+    transform: translateX(0%);
+    scale: 1;
+    filter: grayscale(0);
+  }
+  85% {
+    transform: translateX(0%);
+    scale: 1;
+    filter: grayscale(0);
+  }
+  100% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  20% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+  30% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+  50% {
+    transform: translateX(0%);
+    scale: 1;
+    filter: grayscale(0);
+  }
+  60% {
+    transform: translateX(0%);
+    scale: 1;
+    filter: grayscale(0);
+  }
+  80% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  85% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  100% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+}
+
+@keyframes move4 {
+  0% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+  20% {
+    transform: translateX(0%);
+    scale: 1;
+    filter: grayscale(0);
+  }
+  30% {
+    transform: translateX(0%);
+    scale: 1;
+    filter: grayscale(0);
+  }
+  50% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  60% {
+    transform: translateX(205%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  80% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  85% {
+    transform: translateX(205%) translateY(-120%);
+    scale: 0.8;
+    filter: grayscale(1);
+  }
+  100% {
+    transform: translateX(0%) translateY(-120%);
+    scale: 0.9;
+    filter: grayscale(1);
+  }
+}
+
+.move1 {
+  animation: move1 20s ease infinite;
+}
+
+.move2 {
+  animation: move2 20s ease infinite;
+  animation-delay: 3.75s; /* 20s / 4 untuk offset */
+}
+
+.move3 {
+  animation: move3 20s ease infinite;
+  animation-delay: 7.5s; /* 20s / 2 untuk offset */
+}
+
+.move4 {
+  animation: move4 20s ease infinite;
+  animation-delay: 11.25s; /* 20s * 3/4 untuk offset */
+}
+
+/* Keyframe Slider ========================================= */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeDown {
+  animation: fadeDown 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.fadeUp {
+  animation: fadeUp 0.3s ease-in-out forwards;
+}
+
+.main_option {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main_option {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background: white;
+  }
+}
+
+.main_ag {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main_ag {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background: white;
+  }
+}
+
+/* Running Element */
+
+/* Animasi bergerak ke kiri */
+.running-animation-left {
+  animation: move-left 30s linear infinite;
+}
+
+@keyframes move-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Animasi bergerak ke kanan */
+.running-animation-right {
+  animation: move-right 30s linear infinite;
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Animasi Stop bergerak ketika di hover */
+
+.running-animation-left:hover {
+  animation-play-state: paused;
+}
+
+.running-animation-right:hover {
+  animation-play-state: paused;
+}
+
+/* Durasi animasi di mobile lebih cepat */
+@media (max-width: 768px) {
+  .running-animation-left {
+    animation: move-left 15s linear infinite;
+  }
+  .running-animation-right {
+    animation: move-right 15s linear infinite;
+  }
+}
+
+@keyframes overlayToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.overlayToLeft {
+  animation: overlayToLeft 0.3s ease-in-out forwards;
+}
+
+@keyframes overlayToRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+}
+
+.overlayToRight {
+  animation: overlayToRight 0.3s ease-in-out forwards;
+}
+
+/* Custom scrollbar for the scroll-bar-modal class */
+.scroll-bar-modal::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+}
+
+.scroll-bar-modal::-webkit-scrollbar-thumb {
+  background-color: #389ed9; /* Color of the scrollbar thumb */
+  border-radius: 20px; /* Rounded corners */
+  border: 1px solid #ffff; /* Optional border around the thumb */
+}
+
+.scroll-bar-modal::-webkit-scrollbar-track {
+  background: #63636363; /* Background color of the track */
+}
+
+/* For Firefox */
+.scroll-bar-modal {
+  scrollbar-width: thin; /* Options: auto, thin, none */
+  scrollbar-color: #389ed9 #ffff; /* Thumb color Track color */
+}
+
+/* Global CSS for Swiper Gradient Mask */
+.option-mobile-swiper {
+  position: relative;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+}
+
+.inspiration-content-mobile-swiper .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 4px !important;
+  margin: 0 4px !important; /* Margin antar pagination bullets */
+  border-radius: 20px !important;
+  background-color: #d0d0d0 !important; /* Warna pagination */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.inspiration-content-mobile-swiper .swiper-pagination-bullet-active {
+  width: 28px !important; /* Perbesar hanya pada lebar */
+  height: 4px !important;
+  background-color: #389ed9 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.custom-phone-input {
+  width: 100% !important;
+  padding: 20px !important;
+  padding-left: 50px !important;
+  background-color: #fafafa !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  font-size: 0.875rem !important;
+  color: #1f2937 !important;
+  border: none !important;
+}
+
+.custom-phone-input::placeholder {
+  font-size: 12px !important;
+  color: #9b9b9b !important;
+}
+
+.hero_main {
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.9) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.9) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+/* Menghapus masking di perangkat mobile */
+@media screen and (max-width: 768px) {
+  .hero_main {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+.mitra_section {
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    /* Transparan di atas */ rgba(0, 0, 0, 1) 10%,
+    /* Solid hitam mendekati atas */ rgba(0, 0, 0, 1) 90%,
+    /* Solid hitam mendekati bawah */ rgba(0, 0, 0, 0) 100%
+      /* Transparan di bawah */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.volunteer_main {
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    /* Transparan di atas */ rgba(0, 0, 0, 0.3) 15%,
+    /* Sedikit transparan untuk transisi lebih halus */ rgba(0, 0, 0, 1) 30%,
+    /* Solid hitam mendekati tengah */ rgba(0, 0, 0, 1) 70%,
+    /* Solid hitam mendekati tengah */ rgba(0, 0, 0, 0.3) 85%,
+    /* Sedikit transparan untuk transisi lebih halus */ rgba(0, 0, 0, 0) 100%
+      /* Transparan di bawah */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 15%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0.3) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.footer_main {
+  mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.9) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.9) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh); /* Bergerak ke bawah hingga keluar layar */
+    opacity: 0.5;
+  }
+}
+
+.item_mitra {
+  opacity: 0;
+  position: relative; /* Untuk memastikan elemen berada di posisi relatif */
+  animation: rain 3.5s linear infinite;
+}
+
+/* TWIBONNIZE */
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-second {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-first {
+  animation: scroll 40s linear infinite;
+  transition: all;
+  animation-duration: 40s;
+  rotate: 0deg;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.animate-scroll-second {
+  animation: scroll-second 40s reverse linear infinite;
+  transition: all;
+  animation-duration: 40s;
+  rotate: 0deg;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.animate-scroll-third {
+  animation: scroll 40s linear infinite;
+  transition: all;
+  animation-duration: 40s;
+  rotate: 0deg;
+  margin-left: 20px;
+  margin-right: 20px;
+}
