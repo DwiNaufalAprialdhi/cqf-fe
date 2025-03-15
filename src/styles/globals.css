@@ -19,8 +19,13 @@
     @apply scroll-smooth;
   }
 
+  .font-smooth {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   body {
-    @apply font-poppins text-theme-dark;
+    @apply font-poppins text-theme-dark font-smooth;
   }
 }
 
