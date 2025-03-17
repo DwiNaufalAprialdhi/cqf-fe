@@ -9,17 +9,17 @@ export default function Footer() {
             <>
                   <main className='footer_main hidden lg:block w-full h-auto py-20 overflow-hidden relative font-smooth'>
                         {/* Ornament */}
-                        <div className='absolute bottom-0 left-0 w-full h-auto z-[1] bounceOpt01'>
-                              <Image src='/assets/ornament/ornament-footer-1.svg' alt='ornament' width={1920} height={200} className='w-full h-auto object-cover' />
+                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[1] bounceOpt01'>
+                              <Image src='/assets/ornament/of-1.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover' />
                         </div>
-                        <div className='absolute bottom-0 left-0 w-full h-auto z-[2] bounceOpt02'>
-                              <Image src='/assets/ornament/ornament-footer-2.svg' alt='ornament' width={1920} height={200} className='w-full h-auto object-cover' />
+                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[2] bounceOpt02'>
+                              <Image src='/assets/ornament/of-2.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover' />
                         </div>
-                        <div className='absolute bottom-0 left-0 w-full h-auto z-[3] bounceOpt03'>
-                              <Image src='/assets/ornament/ornament-footer-3.svg' alt='ornament' width={1920} height={200} className='w-full h-auto object-cover opacity-50' />
+                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[3] bounceOpt03'>
+                              <Image src='/assets/ornament/of-3.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover opacity-50' />
                         </div>
-                        <div className='absolute bottom-0 left-0 w-full h-auto z-[4] bounceOpt04'>
-                              <Image src='/assets/ornament/ornament-footer-4.svg' alt='ornament' width={1920} height={200} className='w-full h-auto object-cover' />
+                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[4] bounceOpt04'>
+                              <Image src='/assets/ornament/of-4.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover' />
                         </div>
                         {/* Footer */}
                         <footer className='container_section relative z-[8]'>
