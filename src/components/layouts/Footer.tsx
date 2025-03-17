@@ -7,7 +7,7 @@ import MenuIconLink from './footer/MenuIconLink'
 export default function Footer() {
       return (
             <>
-                  <main className='footer_main hidden lg:block w-full h-auto py-20 overflow-hidden relative'>
+                  <main className='footer_main hidden lg:block w-full h-auto py-20 overflow-hidden relative font-smooth'>
                         {/* Ornament */}
                         <div className='absolute bottom-0 left-0 w-full h-auto z-[1] bounceOpt01'>
                               <Image src='/assets/ornament/ornament-footer-1.svg' alt='ornament' width={1920} height={200} className='w-full h-auto object-cover' />

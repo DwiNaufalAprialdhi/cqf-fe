@@ -28,7 +28,7 @@ export default function AmazingGroup() {
 
       return (
             <>
-                  <main className="main_ag w-full h-auto pt-0 pb-[50px] lg:pt-20 lg:pb-20 grid grid-cols-1 relative overflow-hidden">
+                  <main className="main_ag w-full h-auto pt-0 pb-[50px] lg:pt-20 lg:pb-20 grid grid-cols-1 relative overflow-hidden font-smooth">
                         {/* Ornament */}
                         <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[4] bounceOpt01'>
                               <Image src='/assets/ornament/ornament-opt-1.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />

@@ -6,17 +6,17 @@ export default function OrnamentHero() {
             <>
                   {/* Ornament */}
                   {/* overflow-x-hidden relative */}
-                  <div className="absolute top-[-200px] left-0 w-full h-auto z-[1] bounce01">
-                        <Image src="/assets/ornament/ornament-hero-01.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
+                  <div className="absolute top-[0px] lg:top-[-150px] left-0 w-full md:h-auto h-full z-[3] bounce01">
+                        <Image src="/assets/ornament/oh-1.svg" alt="Ornament" width={1500} height={834} className="w-full md:h-auto h-full object-cover" />
                   </div>
-                  <div className="absolute top-[-200px] left-0 w-full h-auto z-[2] bounce02">
-                        <Image src="/assets/ornament/ornament-hero-02.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
+                  <div className="absolute top-[0px] lg:top-[-150px] left-0 w-full md:h-auto h-full z-[4] bounce02">
+                        <Image src="/assets/ornament/oh-2.svg" alt="Ornament" width={1500} height={834} className="w-full md:h-auto h-full object-cover" />
                   </div>
-                  <div className="absolute top-[-200px] left-0 w-full h-auto z-[3] bounce03">
-                        <Image src="/assets/ornament/ornament-hero-03.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
+                  <div className="absolute top-[0px] lg:top-[-150px] left-0 w-full md:h-auto h-full z-[5] bounce03">
+                        <Image src="/assets/ornament/oh-3.svg" alt="Ornament" width={1500} height={834} className="w-full md:h-auto h-full object-cover" />
                   </div>
-                  <div className="absolute top-[-700px] left-0 w-full h-auto z-[4] bounce04">
-                        <Image src="/assets/ornament/ornament-hero-04.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
+                  <div className="absolute top-[0px] lg:top-[-150px] left-0 w-full md:h-auto h-full z-[2] bounce04">
+                        <Image src="/assets/ornament/oh-4.svg" alt="Ornament" width={1500} height={834} className="w-full md:h-auto h-full object-cover" />
                   </div>
             </>
       )

@@ -12,7 +12,7 @@ export default function Inspiration() {
 
       return (
             <>
-                  <main className='w-full h-auto lg:pb-[80px] pb-[30px] overflow-hidden'>
+                  <main className='w-full h-auto lg:pb-[80px] pb-[30px] overflow-hidden font-smooth'>
                         <section className='container_section relative z-10'>
                               {/* Header */}
                               <div data-aos='fade-up' className='flex items-center justify-between lg:mb-[32px] mb-4 lg:px-0 px-5'>

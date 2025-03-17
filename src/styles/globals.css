@@ -20,7 +20,7 @@
   }
 
   body {
-    @apply font-poppins text-theme-dark text-opacity-90;
+    @apply font-poppins text-theme-dark text-opacity-85;
   }
 }
 
@@ -1007,4 +1007,23 @@
   rotate: 0deg;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.masking {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95); /* Warna lebih opaque */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 94%,
+    /* Perbanyak area solid */ rgba(0, 0, 0, 0.5) 97%,
+    /* Tambahkan transisi halus */ rgba(0, 0, 0, 0) 100%
+      /* Makin transparan di ujung */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 94%,
+    rgba(0, 0, 0, 0.5) 97%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transition: all 0.3s ease;
 }

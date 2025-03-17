@@ -52,12 +52,12 @@ export default function Hero() {
 
       return (
             <>
-                  <main className="w-full h-full min-h-screen overflow-hidden relative font-smooth">
+                  <main className="w-full h-max overflow-hidden relative font-smooth masking">
                         {/* OrnamentHero */}
                         <OrnamentHero />
 
                         {/* Content */}
-                        <section className="container_section lg:px-0 px-5 grid lg:grid-cols-2 grid-cols-1 items-center lg:gap-[50px] gap-4 relative z-10 lg:pt-[183px] pt-[155px] lg:pb-[200px] pb-[32px] transition-all duration-300 ease transform ">
+                        <section className="container_section lg:px-0 px-5 grid lg:grid-cols-2 grid-cols-1 items-center lg:gap-[50px] gap-4 relative z-10 lg:pt-[183px] pt-[155px] lg:pb-[220px] pb-[50px] transition-all duration-300 ease transform ">
 
                               {/* Left */}
                               <motion.div
@@ -65,14 +65,14 @@ export default function Hero() {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.8 }}
                                     className="w-full h-auto col-span-1 flex flex-col lg:order-1 order-2">
-                                    <h2 className="title_slider font-bold lg:text-[48px] text-[24px] lg:leading-[57px] leading-normal tracking-[0.5%] text-center lg:text-start lg:mb-5 mb-2">
+                                    <h2 className="title_slider font-bold lg:text-[48px] text-[24px] lg:leading-[57px] leading-normal tracking-[0.5%] text-center lg:text-start lg:mb-5 mb-2 text-white">
                                           {items[activeIndex].title}
                                     </h2>
-                                    <p className="subtitle_slider font-normal lg:text-base text-sm lg:leading-[24px] leading-normal text-theme-secondary text-center lg:text-start lg:mb-[32px] mb-4">
+                                    <p className="subtitle_slider font-normal lg:text-base text-sm lg:leading-[24px] leading-normal text-[#E9E9E9] text-center lg:text-start lg:mb-[32px] mb-4">
                                           {items[activeIndex].subtitle}
 
                                     </p>
-                                    <Link href={items[activeIndex].link} className="link_slider lg:w-max w-full h-max mx-auto lg:mx-0">
+                                    <Link href={items[activeIndex].link} className="link_slider shadow-md rounded-full lg:w-max w-full h-max mx-auto lg:mx-0">
                                           <ButtonIcon>
                                                 Donasi Sekarang
                                           </ButtonIcon>

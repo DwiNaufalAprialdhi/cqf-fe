@@ -68,7 +68,7 @@ export default function Navbar() {
       return (
             <>
                   {/* Desktop */}
-                  <nav className={`fixed top-0 inset-x-0 w-full h-auto z-50 transition-all duration-300 transform font-smooth ${scrollY > 0 ? "bg-white border-b border-slate-200 border-opacity-50" : "bg-transparent"}`}>
+                  <nav className={`fixed top-0 inset-x-0 w-full h-auto z-50 transition-all duration-300 transform font-smooth ${scrollY > 0 ? "bg-white border-b border-slate-200 border-opacity-50" : "bg-white border-b border-slate-200 border-opacity-50"}`}>
                         <div className='container_section lg:px-0 px-5 py-3 flex items-center justify-between'>
                               {
                                     isSearchActive ?

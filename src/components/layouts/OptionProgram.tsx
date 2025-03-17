@@ -10,7 +10,7 @@ import Icon from '../Icons/Icon';
 export default function OptionProgram() {
       return (
             <>
-                  <main className="main_option w-full h-auto lg:pt-[80px] pt-0 lg:pb-[160px] pb-[40px] relative overflow-hidden">
+                  <main className="main_option w-full h-auto lg:pt-[80px] pt-0 lg:pb-[160px] pb-[40px] relative overflow-hidden font-smooth">
                         {/* Ornament */}
                         <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[4] bounceOpt01'>
                               <Image src='/assets/ornament/ornament-opt-1.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
