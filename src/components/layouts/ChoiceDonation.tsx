@@ -21,10 +21,10 @@ export default function ChoiceDonation() {
 
       return (
             <>
-                  <main className='w-full h-auto overflow-x-hidden relative lg:mb-[0px] mb-[0px]'>
+                  <main className='w-full h-auto overflow-x-hidden relative lg:mb-[0px] mb-[0px] font-smooth'>
                         <section className='container_section'>
                               {/* Header */}
-                              <div data-aos='fade-up' className='flex items-center justify-between lg:mb-[32px] mb-4 lg:px-0 px-5'>
+                              <div data-aos='fade-down' className='flex items-center justify-between lg:mb-[32px] mb-4 lg:px-0 px-5'>
                                     <div className='flex flex-col gap-y-4'>
                                           <h2 className='text_title'>Donasi Pilihan</h2>
                                           <p className='text_subtitle'>Pilih dan salurkan donasi melalui program-program kami yang berarti bagi sahabat Cinta quran.</p>
@@ -39,7 +39,7 @@ export default function ChoiceDonation() {
                                     </div>
                               </div>
                               {/* Slider Category */}
-                              <div data-aos='fade-up' className='w-full grid grid-cols-1 lg:mb-5 mb-0 lg:pl-0 pl-5'>
+                              <div data-aos='fade-down' className='w-full grid grid-cols-1 lg:mb-5 mb-0 lg:pl-0 pl-5'>
                                     <Swiper
                                           slidesPerView={1}
                                           spaceBetween={10}

@@ -52,7 +52,7 @@ export default function Hero() {
 
       return (
             <>
-                  <main className="w-full h-full min-h-screen overflow-hidden relative">
+                  <main className="w-full h-full min-h-screen overflow-hidden relative font-smooth">
                         {/* OrnamentHero */}
                         <OrnamentHero />
 

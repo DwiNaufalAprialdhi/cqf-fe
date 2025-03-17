@@ -19,13 +19,8 @@
     @apply scroll-smooth;
   }
 
-  .font-smooth {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
   body {
-    @apply font-poppins text-theme-dark font-smooth;
+    @apply font-poppins text-theme-dark text-opacity-90;
   }
 }
 
@@ -83,6 +78,13 @@
   }
   .navbar_link_menu {
     @apply font_baloo font-normal text-base leading-tight text-slate-800;
+  }
+}
+
+@layer utilities {
+  .font-smooth {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

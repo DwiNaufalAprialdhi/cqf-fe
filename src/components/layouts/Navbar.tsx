@@ -54,12 +54,22 @@ export default function Navbar() {
             };
       }, [lastScrollY]);
 
+      const [scrollY, setScrollY] = useState(0);
+
+      useEffect(() => {
+            const handleScroll = () => {
+                  setScrollY(window.scrollY);
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
+
       return (
             <>
                   {/* Desktop */}
-                  <nav className={`fixed top-0 inset-x-0 w-full h-auto bg-white border-b border-[#D0D0D0] border-opacity-10 shadow-sm z-50 transition-all transform duration-500`}>
+                  <nav className={`fixed top-0 inset-x-0 w-full h-auto z-50 transition-all duration-300 transform font-smooth ${scrollY > 0 ? "bg-white border-b border-slate-200 border-opacity-50" : "bg-transparent"}`}>
                         <div className='container_section lg:px-0 px-5 py-3 flex items-center justify-between'>
-
                               {
                                     isSearchActive ?
                                           <>
